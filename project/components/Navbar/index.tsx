@@ -11,7 +11,7 @@ export const Navbar = () => {
 				<HamburgerSVG></HamburgerSVG>
 			</div>
 
-			<div className='hidden md:flex justify-between w-64 items-center'>
+			<div className='hidden md:flex justify-between w-64 items-center '>
 				<Link href='/home'>Home</Link>
 				<Link href='/projects'>Portfolio</Link>
 				<Link href='/contact'>Contact Me</Link>

@@ -1,4 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+section {
+  padding: 24px;
+}
+
+@media (min-width: 678px) {
+  section {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1140px) {
+  section {
+    padding: 80px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=global.css.map */
