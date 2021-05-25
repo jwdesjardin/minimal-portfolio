@@ -1,15 +1,15 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
+import { Box } from '@fower/react'
+import { ReactElement } from 'react'
+import { Navbar } from '../components/Navbar'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+	return (
+		<Box>
+			<Navbar></Navbar>
+		</Box>
+	)
+}
 
 export default IndexPage
