@@ -4,14 +4,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
 
-section {
-	padding: 24px;
-	@media (min-width: 678px) {
-		padding: 40px;
+@layer components {
+	.primary-button {
+		@apply border-myGrey-900 px-6 py-3 border uppercase;
 	}
-	@media (min-width: 1140px) {
-		padding: 80px;
-		max-width: 1240px;
-		margin: 0 auto;
+}
+
+@layer utilities {
+	// Layout
+
+	.flex-center {
+		@apply flex flex-col items-center justify-center;
+	}
+
+	.content-container {
+		@apply mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto;
+	}
+
+	// Typography
+	.heading-text {
+		@apply text-lg font-serif font-bold mb-6;
+	}
+	.heading-text-thin {
+		@apply text-lg font-serif;
+	}
+	.normal-text {
+		@apply text-xs font-sans leading-7;
+	}
+	.accent-text {
+		@apply text-xs text-myCyan-500 font-sans leading-8 xl:leading-10  font-bold;
+	}
+
+	.section-border-y-grey {
+		@apply border-t border-b border-myGrey-700;
 	}
 }
