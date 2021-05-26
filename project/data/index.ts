@@ -11,7 +11,7 @@ interface ProjectData {
 	background: string[]
 }
 
-export const Projects: ProjectData[] = [
+const Projects: ProjectData[] = [
 	{
 		slug: 'bookmark',
 		heroImage: '/images/detail/desktop/image-bookmark-hero.jpg',
@@ -37,3 +37,5 @@ export const Projects: ProjectData[] = [
 		],
 	},
 ]
+
+export default Projects

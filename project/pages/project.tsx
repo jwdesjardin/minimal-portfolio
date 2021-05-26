@@ -14,7 +14,25 @@ import { Interested } from '../components/Interested'
 import { Footer } from '../components/Footer'
 import Navigation from '../components/Navigation'
 
-export default function Home() {
+import ProjectData from '../data'
+
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
+
+export async function getStaticProps() {
+	// Call an external API endpoint to get posts.
+	// You can use any data fetching library
+
+	// By returning { props: { posts } }, the Blog component
+	// will receive `posts` as a prop at build time
+	return {
+		props: {
+			data: ProjectData,
+		},
+	}
+}
+
+export default function Home({ data }) {
+	console.log(data)
 	return (
 		<div className=''>
 			<Head>
