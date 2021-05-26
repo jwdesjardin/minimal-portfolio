@@ -12,8 +12,25 @@ export default function Home() {
 
 			{/* Hero */}
 			<section className='content-container relative mb-24'>
-				<div className='mb-6 mt-2 xl:mt-6'>
-					<Image src='/images/homepage/desktop/image-homepage-hero.jpg' width='1110' height='600' />
+				<div className='mb-6 mt-2 xl:mt-6 flex-center'>
+					<img
+						className='mobile-only w-fill'
+						src='/images/homepage/mobile/image-homepage-hero.jpg'
+						width='311'
+						height='271'
+					/>
+					<img
+						className='tablet-only'
+						src='/images/homepage/tablet/image-homepage-hero.jpg'
+						width='688'
+						height='600'
+					/>
+					<img
+						className='desktop-only'
+						src='/images/homepage/desktop/image-homepage-hero.jpg'
+						width='1110'
+						height='600'
+					/>
 				</div>
 
 				<div className='block relative md:psuedo-custom'>
@@ -34,11 +51,24 @@ export default function Home() {
 			{/* About me */}
 			<section className='content-container md:flex '>
 				<div className='md:w-5/12 xl:w-1/2 flex-shrink-0 flex-center  '>
-					<Image
+					<img
+						className='mobile-only w-fill'
+						src='/images/homepage/mobile/image-homepage-profile.jpg'
+						width='311'
+						height='346'
+					/>
+					<img
+						className='tablet-only'
+						src='/images/homepage/tablet/image-homepage-profile.jpg'
+						width='281'
+						height='600'
+					/>
+					<img
+						className='desktop-only'
 						src='/images/homepage/desktop/image-homepage-profile.jpg'
 						width='540'
 						height='600'
-					></Image>
+					/>
 				</div>
 				<div className='section-border-y-grey pt-8 pb-12 mt-8 md:w-7/12 xl:w-1/2 md:ml-16 xl:mx-auto xl:max-w-sm xl:py-12 md:mt-0'>
 					<h2 className='heading-text mb-6'>About Me</h2>

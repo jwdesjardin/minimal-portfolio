@@ -80,13 +80,13 @@
 		@apply absolute bottom-0 left-0 w-9/12 bg-white lg:w-7/12 xl:w-5/12;
 	}
 
-	.hero-image-mqs {
-		background-image: url('/images/homepage/mobile/image-homepage-profile.jpg');
-		@media (min-wdith: 768px) {
-			background-image: url('/images/homepage/tablet/image-homepage-profile.jpg');
-		}
-		@media (min-wdith: 996px) {
-			background-image: url('/images/homepage/desktop/image-homepage-profile.jpg');
-		}
+	.mobile-only {
+		@apply block md:hidden;
+	}
+	.tablet-only {
+		@apply hidden md:block xl:hidden;
+	}
+	.desktop-only {
+		@apply hidden xl:block;
 	}
 }
