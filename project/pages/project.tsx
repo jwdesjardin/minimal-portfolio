@@ -14,7 +14,7 @@ import { Interested } from '../components/Interested'
 import { Footer } from '../components/Footer'
 import Navigation from '../components/Navigation'
 
-import ProjectData from '../data'
+import { Projects, ProjectData } from '../data'
 
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
@@ -26,13 +26,14 @@ export async function getStaticProps() {
 	// will receive `posts` as a prop at build time
 	return {
 		props: {
-			data: ProjectData,
+			projects: Projects,
 		},
 	}
 }
 
-export default function Home({ data }) {
-	console.log(data)
+export default function Home({ projects }) {
+	const data: ProjectData = projects[0]
+
 	return (
 		<div className=''>
 			<Head>
@@ -42,10 +43,17 @@ export default function Home({ data }) {
 
 			<main className='w-full'>
 				<Navbar></Navbar>
-				<ProjectHero></ProjectHero>
+				<ProjectHero imgURL={data.heroImage}></ProjectHero>
 				<section className='content-container xl:flex xl:items-start'>
-					<ProjectDetails></ProjectDetails>
-					<ProjectContent></ProjectContent>
+					<ProjectDetails
+						title={data.title}
+						description={data.description}
+						topics={data.development_topics}
+						stack={data.stack}
+						codeURL={data.code_url}
+						demoURL={data.demo_url}
+					></ProjectDetails>
+					<ProjectContent images={data.images} background={data.background}></ProjectContent>
 				</section>
 				<Navigation></Navigation>
 				<Interested></Interested>
