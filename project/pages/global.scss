@@ -44,4 +44,21 @@
 	.section-border-y-grey {
 		@apply border-t border-b border-myGrey-300;
 	}
+
+	// Form
+
+	.input {
+		@apply bg-myGrey-300 w-full p-3 mb-6;
+		font-size: 13px;
+	}
+
+	.input-label {
+		@apply font-bold leading-8;
+		font-size: 13px;
+	}
+
+	.secondary-button {
+		@apply text-xxs uppercase text-white py-3  px-12;
+		background-color: #203a4c;
+	}
 }

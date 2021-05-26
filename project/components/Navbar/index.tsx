@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const Navbar = () => {
 	return (
-		<div className='flex justify-between items-center p-8 md:px-0 content-container'>
+		<div className='flex justify-between items-center py-8 content-container'>
 			<LogoSVG></LogoSVG>
 
 			<div className='hidden md:flex justify-between w-1/2 xl:w-1/3 items-center uppercase '>

@@ -14,6 +14,7 @@ import { Interested } from '../components/Interested'
 import { Footer } from '../components/Footer'
 import Navigation from '../components/Navigation'
 import SocialLinks from '../components/SocialLinks'
+import ContactForm from '../components/ContactForm'
 
 export default function Contact() {
 	return (
@@ -42,6 +43,8 @@ export default function Contact() {
 						<SocialLinks fillColor='#33323D'></SocialLinks>
 					</div>
 				</section>
+
+				<ContactForm></ContactForm>
 
 				<Footer></Footer>
 			</main>
