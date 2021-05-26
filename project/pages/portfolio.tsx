@@ -11,6 +11,9 @@ export default function Portfolio() {
 		<Layout>
 			<HeadComponent title='Portfolio'></HeadComponent>
 			<ProjectCard></ProjectCard>
+			<ProjectCard></ProjectCard>
+			<ProjectCard></ProjectCard>
+			<ProjectCard></ProjectCard>
 			<Interested></Interested>
 		</Layout>
 	)
