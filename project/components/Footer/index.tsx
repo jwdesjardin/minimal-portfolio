@@ -5,7 +5,7 @@ import SocialLinks from '../SocialLinks'
 
 export const Footer = () => {
 	return (
-		<div className='bg-myGrey-900 py-14 md:py-2'>
+		<footer className='bg-myGrey-900 py-14 md:py-2'>
 			<div className='content-container flex-center md:flex-row md:justify-between'>
 				<div className='flex flex-col md:flex-row w-full '>
 					<div className='flex-center mb-10 md:mb-0 md:mr-8 xl:mr-14'>
@@ -25,6 +25,6 @@ export const Footer = () => {
 				</div>
 				<SocialLinks fillColor='#fff'></SocialLinks>
 			</div>
-		</div>
+		</footer>
 	)
 }

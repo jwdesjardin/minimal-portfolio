@@ -6,7 +6,7 @@ export const Navbar = () => {
 	const [menu, toggleMenu] = useState(false)
 
 	return (
-		<div className='flex justify-between items-center py-8 content-container'>
+		<header className='flex justify-between items-center py-8 content-container'>
 			<LogoSVG></LogoSVG>
 
 			<div className='hidden md:flex justify-between w-1/2 xl:w-1/3 items-center uppercase'>
@@ -42,6 +42,6 @@ export const Navbar = () => {
 					></div>
 				</>
 			)}
-		</div>
+		</header>
 	)
 }
