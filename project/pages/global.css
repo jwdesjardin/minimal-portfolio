@@ -16,19 +16,25 @@
     @apply mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto;
   }
   .heading-text {
-    @apply text-lg font-serif font-bold mb-6;
+    @apply text-lg font-serif font-bold;
   }
   .heading-text-thin {
     @apply text-lg font-serif;
   }
+  .heading-text-thin-md {
+    @apply text-md font-serif;
+  }
   .normal-text {
     @apply text-xs font-sans leading-7;
+  }
+  .medium-text {
+    @apply text-sm font-sans leading-7;
   }
   .accent-text {
     @apply text-xs text-myCyan-500 font-sans leading-8 xl:leading-10  font-bold;
   }
   .section-border-y-grey {
-    @apply border-t border-b border-myGrey-700;
+    @apply border-t border-b border-myGrey-300;
   }
 }
 /*# sourceMappingURL=global.css.map */

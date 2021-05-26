@@ -12,6 +12,7 @@ import { ProjectContent } from '../components/ProjectContent'
 
 import { Interested } from '../components/Interested'
 import { Footer } from '../components/Footer'
+import Navigation from '../components/Navigation'
 
 export default function Home() {
 	return (
@@ -28,7 +29,7 @@ export default function Home() {
 					<ProjectDetails></ProjectDetails>
 					<ProjectContent></ProjectContent>
 				</section>
-
+				<Navigation></Navigation>
 				<Interested></Interested>
 				<Footer></Footer>
 			</main>
