@@ -1,6 +1,7 @@
 export interface ProjectData {
 	slug: string
 	heroImage: string
+	previewImage: string
 	images: string[]
 	title: string
 	description: string
@@ -15,6 +16,7 @@ export const Projects: ProjectData[] = [
 	{
 		slug: 'manage',
 		heroImage: '/images/detail/desktop/image-manage-hero.jpg',
+		previewImage: '/images/portfolio/desktop/image-portfolio-manage.jpg',
 		images: [
 			'/images/detail/desktop/image-manage-preview-1@2x.jpg',
 			'/images/detail/desktop/image-manage-preview-2@2x.jpg',
@@ -39,6 +41,7 @@ export const Projects: ProjectData[] = [
 	{
 		slug: 'bookmark',
 		heroImage: '/images/detail/desktop/image-bookmark-hero.jpg',
+		previewImage: '/images/portfolio/desktop/image-portfolio-bookmark.jpg',
 		images: [
 			'/images/detail/desktop/image-bookmark-preview-1@2x.jpg',
 			'/images/detail/desktop/image-bookmark-preview-2@2x.jpg',
@@ -63,6 +66,7 @@ export const Projects: ProjectData[] = [
 	{
 		slug: 'insure',
 		heroImage: '/images/detail/desktop/image-insure-hero.jpg',
+		previewImage: '/images/portfolio/desktop/image-portfolio-insure.jpg',
 		images: [
 			'/images/detail/desktop/image-insure-preview-1@2x.jpg',
 			'/images/detail/desktop/image-insure-preview-2@2x.jpg',
@@ -87,6 +91,7 @@ export const Projects: ProjectData[] = [
 	{
 		slug: 'fylo',
 		heroImage: '/images/detail/desktop/image-fylo-hero.jpg',
+		previewImage: '/images/portfolio/desktop/image-portfolio-fylo.jpg',
 		images: [
 			'/images/detail/desktop/image-fylo-preview-1@2x.jpg',
 			'/images/detail/desktop/image-fylo-preview-2@2x.jpg',
