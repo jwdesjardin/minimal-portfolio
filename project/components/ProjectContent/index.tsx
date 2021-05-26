@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export const ProjectContent = ({
 	background,
@@ -18,7 +19,9 @@ export const ProjectContent = ({
 
 			<h2 className='heading-text-thin mb-10'>Static Previews</h2>
 			{images.map((image) => (
-				<img className='mb-8' src={image}></img>
+				<div className='mb-8'>
+					<Image src={image} width='635' height='400' />
+				</div>
 			))}
 		</div>
 	)
