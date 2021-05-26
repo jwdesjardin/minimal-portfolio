@@ -8,6 +8,7 @@ module.exports = {
 			serif: ['Ibarra Real Nova', 'serif'],
 		},
 		fontSize: {
+			xxs: '12px',
 			xs: '15px',
 			sm: '16px',
 			md: '32px',
