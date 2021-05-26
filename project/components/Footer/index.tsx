@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
-import { GithubSVG, LinkedinSVG, LogoSVG, TwitterSVG } from '../Icons'
+import { LogoSVG } from '../Icons'
+import SocialLinks from '../SocialLinks'
 
 export const Footer = () => {
 	return (
@@ -22,17 +23,7 @@ export const Footer = () => {
 						</Link>
 					</div>
 				</div>
-				<div className='flex items-center'>
-					<Link href='https://github.com/jwdesjardin'>
-						<GithubSVG className='mr-4 cursor-pointer' fillColor='#fff'></GithubSVG>
-					</Link>
-					<Link href='https://twitter.com/joey_desjardin'>
-						<TwitterSVG className='mr-4 cursor-pointer' fillColor='#fff'></TwitterSVG>
-					</Link>
-					<Link href='https://www.linkedin.com/in/joey-desjardin/'>
-						<LinkedinSVG className='cursor-pointer' fillColor='#fff'></LinkedinSVG>
-					</Link>
-				</div>
+				<SocialLinks fillColor='#fff'></SocialLinks>
 			</div>
 		</div>
 	)
