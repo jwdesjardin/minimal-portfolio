@@ -45,6 +45,10 @@
 		@apply border-t border-b border-myGrey-300;
 	}
 
+	.link-text {
+		@apply uppercase text-white text-xxs;
+	}
+
 	// Form
 
 	.input {
@@ -60,5 +64,15 @@
 	.secondary-button {
 		@apply text-xxs uppercase text-white py-3  px-12;
 		background-color: #203a4c;
+	}
+
+	//menu
+
+	.menu-button {
+		@apply py-6 border-b-4 border-myCyan-500 flex-center cursor-pointer hover:bg-myGrey-700;
+	}
+
+	.menu {
+		@apply absolute right-10 top-20 w-1/2 bg-myGrey-900 border-collapse z-50;
 	}
 }
