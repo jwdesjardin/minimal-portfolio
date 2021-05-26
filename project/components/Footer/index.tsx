@@ -12,25 +12,25 @@ export const Footer = () => {
 					</div>
 					<div className='flex-center md:flex-row justify-between text-white uppercase font-sans text-xxs mb-10 md:my-6 '>
 						<Link href='/home'>
-							<p className='mb-8 md:mb-0 md:mr-8 xl:mr-10'>Home</p>
+							<a className='mb-8 md:mb-0 md:mr-8 xl:mr-10'>Home</a>
 						</Link>
-						<Link href='/projects'>
-							<p className='mb-8 md:mb-0 md:mr-8 xl:mr-10'>Portfolio</p>
+						<Link href='/portfolio'>
+							<a className='mb-8 md:mb-0 md:mr-8 xl:mr-10'>Portfolio</a>
 						</Link>
 						<Link href='/contact'>
-							<p className=''>Contact Me</p>
+							<a className=''>Contact Me</a>
 						</Link>
 					</div>
 				</div>
 				<div className='flex items-center'>
-					<Link href='#'>
-						<GithubSVG className='mr-4' fillColor='#fff'></GithubSVG>
+					<Link href='https://github.com/jwdesjardin'>
+						<GithubSVG className='mr-4 cursor-pointer' fillColor='#fff'></GithubSVG>
 					</Link>
-					<Link href='#'>
-						<TwitterSVG className='mr-4' fillColor='#fff'></TwitterSVG>
+					<Link href='https://twitter.com/joey_desjardin'>
+						<TwitterSVG className='mr-4 cursor-pointer' fillColor='#fff'></TwitterSVG>
 					</Link>
-					<Link href='#'>
-						<LinkedinSVG fillColor='#fff'></LinkedinSVG>
+					<Link href='https://www.linkedin.com/in/joey-desjardin/'>
+						<LinkedinSVG className='cursor-pointer' fillColor='#fff'></LinkedinSVG>
 					</Link>
 				</div>
 			</div>
