@@ -62,7 +62,7 @@
 	}
 
 	.secondary-button {
-		@apply text-xxs uppercase text-white py-3 px-12;
+		@apply text-xxs uppercase text-white py-4 px-10;
 		background-color: #203a4c;
 	}
 
@@ -74,5 +74,19 @@
 
 	.menu {
 		@apply absolute right-10 top-20 w-1/2 bg-myGrey-900 border-collapse z-50;
+	}
+
+	.psuedo-custom {
+		@apply absolute bottom-0 left-0 w-9/12 bg-white lg:w-7/12 xl:w-5/12;
+	}
+
+	.hero-image-mqs {
+		background-image: url('/images/homepage/mobile/image-homepage-profile.jpg');
+		@media (min-wdith: 768px) {
+			background-image: url('/images/homepage/tablet/image-homepage-profile.jpg');
+		}
+		@media (min-wdith: 996px) {
+			background-image: url('/images/homepage/desktop/image-homepage-profile.jpg');
+		}
 	}
 }
