@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export const Interested = () => {
@@ -8,7 +9,9 @@ export const Interested = () => {
 			</h2>
 			{/* grey box divider */}
 			<div className='h-1 bg-myGrey-300 w-full mx-6 hidden md:block'></div>
-			<button className='primary-button flex-shrink-0'>Contact Me</button>
+			<Link href='/contact'>
+				<button className='primary-button flex-shrink-0'>Contact Me</button>
+			</Link>
 		</div>
 	)
 }

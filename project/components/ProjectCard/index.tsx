@@ -1,16 +1,19 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const ProjectCard = ({
 	direction,
 	title,
 	desc,
 	imgURL,
+	slug,
 }: {
 	direction: 'right' | 'left'
 	title: string
 	desc: string
 	imgURL: string
+	slug: string
 }) => {
 	const leftClasses = 'flex-center md:flex-row content-container mb-20'
 	const rightClasses = 'flex-center md:flex-row-reverse content-container mb-20'
@@ -29,7 +32,9 @@ export const ProjectCard = ({
 			<div className={direction === 'left' ? leftContentClasses : rightContentClasses}>
 				<h2 className='heading-text mb-6 '>{title}</h2>
 				<p className='normal-text mb-6 xl:max-w-sm'>{desc}</p>
-				<button className='primary-button'>View Project</button>
+				<Link href={`/project/${slug}`}>
+					<button className='primary-button'>View Project</button>
+				</Link>
 			</div>
 		</section>
 	)

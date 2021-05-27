@@ -29,6 +29,7 @@ export default function Portfolio({ projects }: InferGetStaticPropsType<typeof g
 					imgURL={project.previewImage}
 					title={project.title}
 					desc={project.description}
+					slug={project.slug}
 				></ProjectCard>
 			))}
 

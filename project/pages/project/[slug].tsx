@@ -2,14 +2,9 @@ import Head from 'next/head'
 import React from 'react'
 import { Navbar } from '../../components/Navbar'
 
-// ProjectHero
 import { ProjectHero } from '../../components/ProjectHero'
 import { ProjectDetails } from '../../components/ProjectDetails'
 import { ProjectContent } from '../../components/ProjectContent'
-// ProjectDetails
-// ProjectContent
-// Navigation
-
 import { Interested } from '../../components/Interested'
 import { Footer } from '../../components/Footer'
 import Navigation from '../../components/Navigation'
