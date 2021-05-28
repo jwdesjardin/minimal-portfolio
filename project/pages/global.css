@@ -69,5 +69,8 @@
   .desktop-only {
     @apply hidden xl:block;
   }
+  .form-error-text {
+    @apply text-red-600;
+  }
 }
 /*# sourceMappingURL=global.css.map */

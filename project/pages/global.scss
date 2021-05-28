@@ -89,4 +89,8 @@
 	.desktop-only {
 		@apply hidden xl:block;
 	}
+
+	.form-error-text {
+		@apply text-red-600;
+	}
 }
