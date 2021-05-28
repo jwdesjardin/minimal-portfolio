@@ -13,13 +13,17 @@ export const Footer = () => {
 					</div>
 					<div className='flex-center md:flex-row justify-between text-white uppercase font-sans text-xxs mb-10 md:my-6 '>
 						<Link href='/home'>
-							<a className='mb-8 md:mb-0 md:mr-8 xl:mr-10'>Home</a>
+							<a className='mb-8 md:mb-0 md:mr-8 xl:mr-10 hover:text-myCyan-500 hover:font-bold'>
+								Home
+							</a>
 						</Link>
 						<Link href='/portfolio'>
-							<a className='mb-8 md:mb-0 md:mr-8 xl:mr-10'>Portfolio</a>
+							<a className='mb-8 md:mb-0 md:mr-8 xl:mr-10 hover:text-myCyan-500 hover:font-bold'>
+								Portfolio
+							</a>
 						</Link>
 						<Link href='/contact'>
-							<a className=''>Contact Me</a>
+							<a className='hover:text-myCyan-500 hover:font-bold'>Contact Me</a>
 						</Link>
 					</div>
 				</div>

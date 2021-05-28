@@ -9,10 +9,16 @@ export const Navbar = () => {
 		<header className='flex justify-between items-center py-8 content-container'>
 			<LogoSVG></LogoSVG>
 
-			<div className='hidden md:flex justify-between w-1/3 xl:w-1/4 items-center uppercase text-xxs'>
-				<Link href='/home'>Home</Link>
-				<Link href='/portfolio'>Portfolio</Link>
-				<Link href='/contact'>Contact Me</Link>
+			<div className='hidden md:flex justify-between w-1/3 xl:w-1/4 items-center uppercase text-xxs '>
+				<Link href='/home'>
+					<a className='hover:text-myCyan-500 hover:font-bold'>Home</a>
+				</Link>
+				<Link href='/portfolio'>
+					<a className='hover:text-myCyan-500 hover:font-bold'>Portfolio</a>
+				</Link>
+				<Link href='/contact'>
+					<a className='hover:text-myCyan-500 hover:font-bold'>Contact Me</a>
+				</Link>
 			</div>
 
 			<div className='block md:hidden' onClick={() => toggleMenu(!menu)}>

@@ -11,13 +11,13 @@ const ContactForm = () => {
 				validate={(values) => {
 					const errors: { name?: string; email?: string; message?: string } = {}
 					if (!values.name) {
-						errors.name = 'Required'
+						errors.name = '* Required'
 					} else if (!values.email) {
-						errors.email = 'Required'
+						errors.email = '* Required'
 					} else if (!values.message) {
-						errors.message = 'Required'
+						errors.message = '* Required'
 					} else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-						errors.email = 'Invalid email address'
+						errors.email = '* Invalid email address'
 					}
 					return errors
 				}}
@@ -50,7 +50,7 @@ const ContactForm = () => {
 							onChange={handleChange}
 							onBlur={handleBlur}
 							value={values.name}
-							className='input'
+							className={errors.name && touched.name ? 'input error-outline' : 'input'}
 							placeholder='Jane Appleseed'
 						/>
 
@@ -64,7 +64,7 @@ const ContactForm = () => {
 							onChange={handleChange}
 							onBlur={handleBlur}
 							value={values.email}
-							className='input'
+							className={errors.email && touched.email ? 'input error-outline' : 'input'}
 							placeholder='email@example.com'
 						/>
 
@@ -78,7 +78,7 @@ const ContactForm = () => {
 							onChange={handleChange}
 							onBlur={handleBlur}
 							value={values.message}
-							className='input'
+							className={errors.message && touched.message ? 'input error-outline' : 'input'}
 							placeholder='How can I help?'
 						/>
 

@@ -41,12 +41,15 @@ export default function Home() {
 					<h1 className='heading-text md:max-w-md md:py-12 leading-10 mb-8 '>
 						Hey, I’m Alex Spencer and I love building cool websites.
 					</h1>
-					<button className='secondary-button' onClick={scrollToAbout}>
+					<button
+						className='secondary-button text-myCyan-500 hover:text-myGrey-100'
+						onClick={scrollToAbout}
+					>
 						<div className='flex justify-between items-center w-full'>
-							<div className='mr-10'>
+							<div className='mr-10 '>
 								<DownArrowsSVG></DownArrowsSVG>
 							</div>
-							About Me
+							<span className='text-myGrey-100'>About Me</span>
 						</div>
 					</button>
 				</div>

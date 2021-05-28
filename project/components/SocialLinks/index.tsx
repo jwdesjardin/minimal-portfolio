@@ -6,13 +6,22 @@ const SocialLinks = ({ fillColor = '#33323D' }: { fillColor?: string }): React.R
 	return (
 		<div className='flex items-center'>
 			<Link href='https://github.com/jwdesjardin'>
-				<GithubSVG className='mr-4 cursor-pointer' fillColor={fillColor}></GithubSVG>
+				<GithubSVG
+					className='mr-4 cursor-pointer hover:transform hover:scale-110 '
+					fillColor={fillColor}
+				></GithubSVG>
 			</Link>
 			<Link href='https://twitter.com/joey_desjardin'>
-				<TwitterSVG className='mr-4 cursor-pointer' fillColor={fillColor}></TwitterSVG>
+				<TwitterSVG
+					className='mr-4 cursor-pointer hover:transform hover:scale-110'
+					fillColor={fillColor}
+				></TwitterSVG>
 			</Link>
 			<Link href='https://www.linkedin.com/in/joey-desjardin/'>
-				<LinkedinSVG className='cursor-pointer' fillColor={fillColor}></LinkedinSVG>
+				<LinkedinSVG
+					className='cursor-pointer hover:transform hover:scale-105'
+					fillColor={fillColor}
+				></LinkedinSVG>
 			</Link>
 		</div>
 	)
