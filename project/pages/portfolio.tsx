@@ -21,7 +21,7 @@ export default function Portfolio({ projects }: InferGetStaticPropsType<typeof g
 		<Layout>
 			<HeadComponent title='Portfolio'></HeadComponent>
 			{/* 8px spacer */}
-			<div className='h-1'></div>
+			<div className='h-1 md:h-10'></div>
 			{projects.map((project, idx) => (
 				<ProjectCard
 					key={project.slug}

@@ -10,7 +10,7 @@ const Navigation = () => {
 				</div>
 				<div className='md:mt-8'>
 					<h2 className='heading-text-thin-md'>Manage</h2>
-					<p className='medium-text text-myGrey-500'>Previous Project</p>
+					<p className='medium-text text-gray-400'>Previous Project</p>
 				</div>
 			</div>
 			<div className='flex flex-col items-end ml-auto text-right pb-6 md:pb-8 md:flex md:items-center  md:flex-row-reverse'>
@@ -19,7 +19,7 @@ const Navigation = () => {
 				</div>
 				<div className='md:mt-8'>
 					<h2 className='heading-text-thin-md'>Insure</h2>
-					<p className='medium-text text-myGrey-500'>Next Project</p>
+					<p className='medium-text text-gray-400'>Next Project</p>
 				</div>
 			</div>
 		</div>

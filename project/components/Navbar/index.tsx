@@ -9,7 +9,7 @@ export const Navbar = () => {
 		<header className='flex justify-between items-center py-8 content-container'>
 			<LogoSVG></LogoSVG>
 
-			<div className='hidden md:flex justify-between w-1/2 xl:w-1/3 items-center uppercase'>
+			<div className='hidden md:flex justify-between w-1/3 xl:w-1/4 items-center uppercase text-xxs'>
 				<Link href='/home'>Home</Link>
 				<Link href='/portfolio'>Portfolio</Link>
 				<Link href='/contact'>Contact Me</Link>

@@ -6,7 +6,12 @@
 
 @layer components {
 	.primary-button {
-		@apply border-myGrey-900 px-6 py-3 border uppercase;
+		@apply border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider;
+	}
+	.secondary-button {
+		@apply text-xxs border uppercase text-white py-4 px-10;
+		background-color: #203a4c;
+		border-color: #203a4c;
 	}
 }
 
@@ -52,18 +57,13 @@
 	// Form
 
 	.input {
-		@apply bg-myGrey-300 w-full p-3 mb-6;
+		@apply bg-gray-200 w-full p-3 mb-6;
 		font-size: 13px;
 	}
 
 	.input-label {
 		@apply font-bold leading-8;
 		font-size: 13px;
-	}
-
-	.secondary-button {
-		@apply text-xxs uppercase text-white py-4 px-10;
-		background-color: #203a4c;
 	}
 
 	//menu
@@ -77,7 +77,7 @@
 	}
 
 	.psuedo-custom {
-		@apply absolute bottom-0 left-0 w-9/12 bg-white lg:w-7/12 xl:w-5/12;
+		@apply absolute bottom-0 left-0 w-9/12 bg-white lg:w-7/12 xl:w-4/12;
 	}
 
 	.mobile-only {
@@ -92,5 +92,10 @@
 
 	.form-error-text {
 		@apply text-red-600;
+	}
+	.xl-H-500px {
+		@media (min-width: 1110px) {
+			height: 500px;
+		}
 	}
 }

@@ -4,7 +4,12 @@
 @tailwind utilities;
 @layer components {
   .primary-button {
-    @apply border-myGrey-900 px-6 py-3 border uppercase;
+    @apply border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider;
+  }
+  .secondary-button {
+    @apply text-xxs border uppercase text-white py-4 px-10;
+    background-color: #203a4c;
+    border-color: #203a4c;
   }
 }
 
@@ -40,16 +45,12 @@
     @apply uppercase text-white text-xxs;
   }
   .input {
-    @apply bg-myGrey-300 w-full p-3 mb-6;
+    @apply bg-gray-200 w-full p-3 mb-6;
     font-size: 13px;
   }
   .input-label {
     @apply font-bold leading-8;
     font-size: 13px;
-  }
-  .secondary-button {
-    @apply text-xxs uppercase text-white py-4 px-10;
-    background-color: #203a4c;
   }
   .menu-button {
     @apply py-6 border-b-4 border-myCyan-500 flex-center cursor-pointer hover:bg-myGrey-700;
@@ -58,7 +59,7 @@
     @apply absolute right-10 top-20 w-1/2 bg-myGrey-900 border-collapse z-50;
   }
   .psuedo-custom {
-    @apply absolute bottom-0 left-0 w-9/12 bg-white lg:w-7/12 xl:w-5/12;
+    @apply absolute bottom-0 left-0 w-9/12 bg-white lg:w-7/12 xl:w-4/12;
   }
   .mobile-only {
     @apply block md:hidden;
@@ -71,6 +72,11 @@
   }
   .form-error-text {
     @apply text-red-600;
+  }
+  @media (min-width: 1110px) {
+    .xl-H-500px {
+      height: 500px;
+    }
   }
 }
 /*# sourceMappingURL=global.css.map */

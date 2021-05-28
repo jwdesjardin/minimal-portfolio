@@ -9,8 +9,8 @@ export const ProjectContent = ({
 	images: string[]
 }) => {
 	return (
-		<div className='py-12 xl:w-7/12 xl:pl-12'>
-			<h2 className='heading-text-thin mb-6'>Project Background</h2>
+		<div className='pt-12 pb-8 xl:w-7/12 xl:pl-12 xl:pt-0'>
+			<h2 className='heading-text-thin-md mb-6'>Project Background</h2>
 			<div className='mb-10'>
 				{background.map((text, idx) => (
 					<p key={idx} className='normal-text'>
@@ -19,10 +19,10 @@ export const ProjectContent = ({
 				))}
 			</div>
 
-			<h2 className='heading-text-thin mb-10'>Static Previews</h2>
+			<h2 className='heading-text-thin-md mb-10'>Static Previews</h2>
 			{images.map((image, idx) => (
 				<div key={idx} className='mb-8'>
-					<Image src={image} width='635' height='400' />
+					<Image src={image} width='689' height='434' />
 				</div>
 			))}
 		</div>

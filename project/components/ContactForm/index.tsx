@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { Formik } from 'formik'
 
 const ContactForm = () => {
 	return (
 		<section className='content-container mb-20 xl:flex xl:py-10'>
-			<h2 className='heading-text mt-10 mb-6 xl:w-5/12'>Contact Me</h2>
+			<h2 className='heading-text mt-10 mb-6 xl:w-5/12 xl:mt-0'>Contact Me</h2>
 
 			<Formik
 				initialValues={{ name: '', email: '', message: '' }}
@@ -51,6 +51,7 @@ const ContactForm = () => {
 							onBlur={handleBlur}
 							value={values.name}
 							className='input'
+							placeholder='Jane Appleseed'
 						/>
 
 						<label className='input-label' htmlFor='email'>
@@ -64,10 +65,11 @@ const ContactForm = () => {
 							onBlur={handleBlur}
 							value={values.email}
 							className='input'
+							placeholder='email@example.com'
 						/>
 
 						<label className='input-label' htmlFor='name'>
-							Messages
+							Message
 						</label>
 						{errors.message && touched.message && <ErrorText>{errors.message}</ErrorText>}
 						<textarea
@@ -77,10 +79,11 @@ const ContactForm = () => {
 							onBlur={handleBlur}
 							value={values.message}
 							className='input'
+							placeholder='How can I help?'
 						/>
 
 						<button type='submit' disabled={isSubmitting} className='secondary-button'>
-							Submit
+							Send Message
 						</button>
 					</form>
 				)}
@@ -92,34 +95,5 @@ const ContactForm = () => {
 const ErrorText = ({ children }: { children: ReactNode }) => {
 	return <p className='form-error-text'>{children}</p>
 }
-// const ContactForm = () => {
-// 	return (
-// 		<section className='content-container mb-20 xl:flex xl:py-10'>
-// 			<h2 className='heading-text mt-10 mb-6 xl:w-5/12'>Contact Me</h2>
-
-// 			<form action='' className='xl:w-7/12'>
-// 				<div>
-// 					<label className='input-label' htmlFor='name'>
-// 						Name
-// 					</label>
-// 					<input className='input' name='name' type='text' placeholder='Jane Appleseed' />
-// 				</div>
-// 				<div>
-// 					<label className='input-label' htmlFor='email'>
-// 						Email Address
-// 					</label>
-// 					<input className='input' name='email' type='text' placeholder='email@example.com' />
-// 				</div>
-// 				<div>
-// 					<label className='input-label' htmlFor='name'>
-// 						Messages
-// 					</label>
-// 					<textarea className='input' name='message' placeholder='How can i help?' rows={5} />
-// 				</div>
-// 				<button className='secondary-button '>Send Message</button>
-// 			</form>
-// 		</section>
-// 	)
-// }
 
 export default ContactForm
