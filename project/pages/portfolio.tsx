@@ -1,13 +1,11 @@
-import Head from 'next/head'
-import { Navbar } from '../components/Navbar'
+import React from 'react'
 import { ProjectCard } from '../components/ProjectCard'
 import { Interested } from '../components/Interested'
-import { Footer } from '../components/Footer'
-import React from 'react'
 import { HeadComponent, Layout } from '../components/Layout'
 
-import { Projects } from '../data'
 import { InferGetStaticPropsType } from 'next'
+import { Projects } from '../data'
+
 export async function getStaticProps() {
 	return {
 		props: {

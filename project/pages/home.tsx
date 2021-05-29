@@ -1,8 +1,6 @@
-import Portfolio from './portfolio'
 import React from 'react'
 import { HeadComponent, Layout } from '../components/Layout'
 import { Interested } from '../components/Interested'
-import Image from 'next/image'
 import { DownArrowsSVG } from '../components/Icons'
 import Link from 'next/link'
 
@@ -10,6 +8,7 @@ export default function Home() {
 	const scrollToAbout = () => {
 		window.scrollTo(0, 800)
 	}
+
 	return (
 		<Layout>
 			<HeadComponent title='Home' />
@@ -18,26 +17,26 @@ export default function Home() {
 			<section className='content-container relative mb-24'>
 				<div className='mb-6 mt-2 xl:mt-6 flex-center'>
 					<img
-						className='mobile-only w-fill'
+						className='md:hidden w-fill'
 						src='/images/homepage/mobile/image-homepage-hero.jpg'
 						width='311'
 						height='271'
 					/>
 					<img
-						className='tablet-only'
+						className='hidden md:block xl:hidden'
 						src='/images/homepage/tablet/image-homepage-hero.jpg'
 						width='688'
 						height='600'
 					/>
 					<img
-						className='desktop-only'
+						className='hidden xl:block'
 						src='/images/homepage/desktop/image-homepage-hero.jpg'
 						width='1110'
 						height='600'
 					/>
 				</div>
 
-				<div className='block relative md:psuedo-custom'>
+				<div className='block relative md:hero-psuedo'>
 					<h1 className='heading-text md:max-w-md md:py-12 leading-10 mb-8 '>
 						Hey, I’m Alex Spencer and I love building cool websites.
 					</h1>
@@ -59,19 +58,19 @@ export default function Home() {
 			<section className='content-container md:flex '>
 				<div className='md:w-5/12 xl:w-1/2 flex-shrink-0 flex-center  '>
 					<img
-						className='mobile-only w-fill'
+						className='md:hidden w-fill'
 						src='/images/homepage/mobile/image-homepage-profile.jpg'
 						width='311'
 						height='346'
 					/>
 					<img
-						className='tablet-only'
+						className='hidden md:block xl:hidden'
 						src='/images/homepage/tablet/image-homepage-profile.jpg'
 						width='281'
 						height='600'
 					/>
 					<img
-						className='desktop-only'
+						className='hidden xl:block'
 						src='/images/homepage/desktop/image-homepage-profile.jpg'
 						width='540'
 						height='600'

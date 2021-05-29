@@ -11,6 +11,17 @@
 	.secondary-button {
 		@apply text-xxs border uppercase text-white py-4 px-10 border-myBlue-700 bg-myBlue-700 hover:bg-myCyan-500 hover:border-myCyan-500 disabled:bg-myGrey-300 disabled:border-myGrey-300;
 	}
+	.menu-button {
+		@apply py-6 border-b-4 border-myCyan-500 flex-center cursor-pointer hover:bg-myGrey-700 hover:border-myGrey-700;
+	}
+
+	.menu {
+		@apply absolute right-10 top-20 w-1/2 bg-myGrey-900 border-collapse z-50;
+	}
+
+	.hero-psuedo {
+		@apply absolute bottom-0 left-0 w-9/12 bg-white lg:w-7/12 xl:w-4/12;
+	}
 }
 
 @layer utilities {
@@ -24,6 +35,10 @@
 		@apply mx-8 md:mx-10 xl:max-w-screen-xl xl:mx-auto;
 	}
 
+	.section-border-y-grey {
+		@apply border-t border-b border-myGrey-300;
+	}
+
 	// Typography
 	.heading-text {
 		@apply text-lg font-serif font-bold;
@@ -34,6 +49,7 @@
 	.heading-text-thin-md {
 		@apply text-md font-serif;
 	}
+
 	.normal-text {
 		@apply text-xs font-sans leading-7;
 	}
@@ -44,12 +60,8 @@
 		@apply text-xs text-myCyan-500 font-sans leading-8 xl:leading-10  font-bold;
 	}
 
-	.section-border-y-grey {
-		@apply border-t border-b border-myGrey-300;
-	}
-
 	.link-text {
-		@apply uppercase text-white text-xxs;
+		@apply uppercase text-white text-xxs font-sans;
 	}
 
 	// Form
@@ -67,36 +79,23 @@
 	.error-outline {
 		@apply ring-myRed-600 ring-2;
 	}
-	//menu
-
-	.menu-button {
-		@apply py-6 border-b-4 border-myCyan-500 flex-center cursor-pointer hover:bg-myGrey-700;
-	}
-
-	.menu {
-		@apply absolute right-10 top-20 w-1/2 bg-myGrey-900 border-collapse z-50;
-	}
-
-	.psuedo-custom {
-		@apply absolute bottom-0 left-0 w-9/12 bg-white lg:w-7/12 xl:w-4/12;
-	}
-
-	.mobile-only {
-		@apply block md:hidden;
-	}
-	.tablet-only {
-		@apply hidden md:block xl:hidden;
-	}
-	.desktop-only {
-		@apply hidden xl:block;
-	}
 
 	.form-error-text {
 		@apply text-red-600 text-xs;
 	}
+
+	// couldnt do with tailwind
 	.xl-H-500px {
 		@media (min-width: 1110px) {
 			height: 500px;
 		}
 	}
 }
+
+// classes
+
+// headings - lg, md, sm
+// text - normal, accent, links
+// button - primary, secondary, menu
+// modals - menu, hero-psuedo
+// input - default, focus, error
