@@ -6,10 +6,10 @@
 
 @layer components {
 	.primary-button {
-		@apply border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white;
+		@apply border-myGrey-900 px-10 py-4 border uppercase text-xxs tracking-wider hover:bg-myGrey-900 hover:text-white transition-all;
 	}
 	.secondary-button {
-		@apply text-xxs border uppercase text-white py-4 px-10 border-myBlue-700 bg-myBlue-700 hover:bg-myCyan-500 hover:border-myCyan-500 disabled:bg-myGrey-300 disabled:border-myGrey-300;
+		@apply text-xxs border uppercase text-white py-4 px-10 border-myBlue-700 bg-myBlue-700 hover:bg-myCyan-500 hover:border-myCyan-500 disabled:bg-myGrey-300 disabled:border-myGrey-300 transition-all;
 	}
 	.menu-button {
 		@apply py-6 border-b-4 border-myCyan-500 flex-center cursor-pointer hover:bg-myGrey-700 hover:border-myGrey-700;
