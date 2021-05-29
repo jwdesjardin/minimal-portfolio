@@ -4,13 +4,18 @@ import React from 'react'
 
 export const LogoSVG = ({
 	fillColor = '#33323D',
-	className = '',
+	className,
 }: {
-	fillColor?: string
+	fillColor: string
 	className?: string
 }) => {
 	return (
-		<svg className={className} xmlns='http://www.w3.org/2000/svg' width='61' height='32'>
+		<svg
+			className={className ? className : ''}
+			xmlns='http://www.w3.org/2000/svg'
+			width='61'
+			height='32'
+		>
 			<path
 				fill={fillColor}
 				fillRule='evenodd'
