@@ -10,16 +10,6 @@ import { HeadComponent, Layout } from '../../components/Layout'
 import { Projects } from '../../data'
 import { InferGetStaticPropsType } from 'next'
 
-export async function getStaticProps({ params }) {
-	const data = Projects.find((project) => project.slug === params.slug)
-
-	return {
-		props: {
-			data,
-		},
-	}
-}
-
 export async function getStaticPaths() {
 	const paths = Projects.map((project) => ({
 		params: { slug: project.slug },
@@ -28,7 +18,29 @@ export async function getStaticPaths() {
 	return { paths, fallback: false }
 }
 
-export default function Project({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
+export async function getStaticProps({ params }) {
+	const data = Projects.find((project) => project.slug === params.slug)
+	const index = Projects.findIndex((project) => project.slug === params.slug)
+	const total = Projects.length - 1
+
+	const previousIdx = index - 1 > -1 ? index - 1 : total
+	const nextIdx = index + 1 > total ? 0 : index + 1
+	console.log(previousIdx, nextIdx)
+	return {
+		props: {
+			data,
+			previous: Projects[previousIdx] || null,
+			next: Projects[nextIdx] || null,
+		},
+	}
+}
+
+export default function Project({
+	data,
+	previous,
+	next,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
+	console.log(previous, next)
 	return (
 		<Layout>
 			<HeadComponent title={data.title} />
@@ -44,7 +56,7 @@ export default function Project({ data }: InferGetStaticPropsType<typeof getStat
 				></ProjectDetails>
 				<ProjectContent images={data.images} background={data.background}></ProjectContent>
 			</section>
-			<Navigation></Navigation>
+			<Navigation previous={previous} next={next}></Navigation>
 			<Interested></Interested>
 		</Layout>
 	)

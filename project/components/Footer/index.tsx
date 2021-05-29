@@ -9,7 +9,7 @@ export const Footer = () => {
 			<div className='content-container flex-center md:flex-row md:justify-between'>
 				<div className='flex flex-col md:flex-row w-full '>
 					<div className='flex-center mb-10 md:mb-0 md:mr-8 xl:mr-14'>
-						<LogoSVG className='' fillColor='#fff'></LogoSVG>
+						<LogoSVG fillColor='#fff'></LogoSVG>
 					</div>
 					<div className='flex-center md:flex-row justify-between text-white uppercase font-sans text-xxs mb-10 md:my-6 '>
 						<Link href='/home'>
