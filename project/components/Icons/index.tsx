@@ -6,7 +6,7 @@ export const LogoSVG = ({
 	fillColor = '#33323D',
 	className,
 }: {
-	fillColor: string
+	fillColor?: string
 	className?: string
 }) => {
 	return (
