@@ -6,7 +6,6 @@ This is a solution to the [Minimalist portfolio website challenge on Frontend Me
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,7 +13,7 @@ This is a solution to the [Minimalist portfolio website challenge on Frontend Me
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Screenshots](#screenshots)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -30,14 +29,6 @@ Users should be able to:
 - Handle validation and collection of data from the contact form into JSON :
   - The `Name`, `Email Address` or `Message` fields are empty should show "This field is required"
   - The `Email Address` is not formatted correctly should show "Please use a valid email address"
--
-
-### Screenshots
-
-<img src="./README-screenshots/home.png" alt="desktop columns" width="400">
-<img src="./README-screenshots/portfolio.png" alt="desktop columns" width="400">
-<img src="./README-screenshots/fylo.png" alt="desktop columns" width="400">
-<img src="./README-screenshots/contact.png" alt="desktop columns" width="400">
 
 ### Links
 
@@ -395,3 +386,10 @@ animation fun - rotaion
 - Website - [Joey Desjardin](https://www.joeydesjardin.com)
 - Frontend Mentor - [@jwdesjardin](https://www.frontendmentor.io/profile/jwdesjardin)
 - Twitter - [@joey_desjardin](https://twitter.com/joey_desjardin)
+
+### Screenshots
+
+<img src="./README-screenshots/home.png" alt="desktop columns" width="400">
+<img src="./README-screenshots/portfolio.png" alt="desktop columns" width="400">
+<img src="./README-screenshots/fylo.png" alt="desktop columns" width="400">
+<img src="./README-screenshots/contact.png" alt="desktop columns" width="400">
